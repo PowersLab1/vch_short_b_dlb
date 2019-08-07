@@ -25,12 +25,6 @@ export function create_blocks(c25, c50, c75) {
       create_block(1,1,1,0),
       create_block(1,1,1,0),
       create_block(1,1,1,0),
-      create_block(1,1,1,0),
-      create_block(1,1,1,0),
-      create_block(1,1,1,0),
-      create_block(1,1,1,0),
-      create_block(1,1,1,0),
-      create_block(1,1,1,0),
     ];
   } else {
     blocks = [
@@ -41,12 +35,6 @@ export function create_blocks(c25, c50, c75) {
       create_block(12, 7, 6, 5),
       create_block(13, 7, 6, 4),
       create_block(14, 7, 6, 3),
-      create_block(14, 7, 7, 2),
-      create_block(14, 7, 7, 2),
-      create_block(14, 7, 7, 2),
-      create_block(14, 7, 7, 2),
-      create_block(14, 7, 7, 2),
-      create_block(14, 7, 7, 2)
     ];
   }
 

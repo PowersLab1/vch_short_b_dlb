@@ -13,11 +13,7 @@ import OnceMore from "./containers/OnceMore";
 import OnceMore_rating from "./containers/OnceMore_rating";
 import Trial_TT_1 from "./containers/Trial_TT_1";
 import Trial_TT_2 from "./containers/Trial_TT_2";
-import Trial_TT_3 from "./containers/Trial_TT_3";
-import Trial_TT_4 from "./containers/Trial_TT_4";
 import Break1 from "./containers/Break1";
-import Break2 from "./containers/Break2";
-import Break3 from "./containers/Break3";
 import ThankYou from "./containers/ThankYou";
 import Error from "./containers/Error";
 
@@ -38,10 +34,6 @@ export default () =>
     <Route path="/Trial_TT_1" exact component={Trial_TT_1} />
     <Route path="/Break1" exact component={Break1} />
     <Route path="/Trial_TT_2" exact component={Trial_TT_2} />
-    <Route path="/Break2" exact component={Break2} />
-    <Route path="/Trial_TT_3" exact component={Trial_TT_3} />
-    <Route path="/Break3" exact component={Break3} />
-    <Route path="/Trial_TT_4" exact component={Trial_TT_4} />
     <Route path="/ThankYou" exact component={ThankYou} />
     <Route path="/Error" exact component={Error} />
 

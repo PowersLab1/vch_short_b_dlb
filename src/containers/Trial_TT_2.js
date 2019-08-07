@@ -25,7 +25,7 @@ class Trial_TT_2 extends Component {
   }
 
   trialCompleteRenderer = (contrasts, response) => {
-    return <Redirect to="/Break2" />
+    return <Redirect to="/ThankYou" />
   }
 
   dataHandler = (contrasts, response, responseTime, ratings, ratingsRaw, timestamps) => {
