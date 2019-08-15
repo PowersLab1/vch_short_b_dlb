@@ -95,7 +95,7 @@ function createPatch(stim) {
    var osc = audioContext.createOscillator();
    var gain = audioContext.createGain();
    osc.connect(gain);
-   osc.value = freq;
+   osc.frequency.value = freq;
    gain.connect(audioContext.destination);
    gain.gain.value = amp/100;
    osc.start(audioContext.currentTime);
