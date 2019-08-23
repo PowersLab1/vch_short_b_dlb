@@ -53,17 +53,7 @@ export function create_blocks_singleton(c25, c50, c75) {
     if (arguments.length == 3) {
       create_blocks_singleton.blocks = create_blocks(c25, c50, c75);
     } else {
-      const data = getProcessedData();
-
-      // If we have quest data from our store, use that as a fallback
-      if (!_.isUndefined(data)) {
-
-        const c25 = data.intensities.c25;
-        const c50 = data.intensities.c50;
-        const c75 = data.intensities.c75;
-
-        create_blocks_singleton.blocks = create_blocks(c25, c50, c75);
-      }
+      throw "Must first populate blocks singleton";
     }
   }
   return create_blocks_singleton.blocks;

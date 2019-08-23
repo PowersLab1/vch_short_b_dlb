@@ -22,8 +22,8 @@ class TrialQ extends Component {
 
     // Initializing QUEST
     // NOTE: Modify your quest parameters here!
-    let tGuess1 = 0.25 + 0.15,
-      tGuess2 = 0.25 - 0.15,
+    let tGuess1 = Math.log10(0.25 + 0.15),
+      tGuess2 = Math.log10(0.25 - 0.15),
       tGuessSd = 0.1,
       pThreshold = 0.75,
       beta = 3.5,
@@ -39,13 +39,13 @@ class TrialQ extends Component {
     // NOTE: Specify how many trials to run for each staircase here.
     // E.g., numTrialsPerStaircase = 40 means 80 trials total,
     // 40 per staircase.
-    const numTrialsPerStaircase = config.debug ? 2 : 40;
+    const numTrialsPerStaircase = config.debug ? 5 : 40;
 
     // Final bit of initialization
     this.index = 0;
     this.maxIndex = numTrialsPerStaircase * 2 - 1;
     this.state = {
-      contrasts: [tGuess1, tGuess2],
+      contrasts: [Math.pow(10,tGuess1), Math.pow(10,tGuess2)],
     };
   }
 
@@ -62,11 +62,11 @@ class TrialQ extends Component {
     }
 
     if (this.index % 2 === 0) {
-      this.q1.update(this.state.contrasts[this.index], response);
-      this.pushContrast(this.q1.quantile());
+      this.q1.update(Math.log10(this.state.contrasts[this.index]), response);
+      this.pushContrast(Math.pow(10,this.q1.quantile()));
     } else {
-      this.q2.update(this.state.contrasts[this.index], response);
-      this.pushContrast(this.q2.quantile());
+      this.q2.update(Math.log10(this.state.contrasts[this.index]), response);
+      this.pushContrast(Math.pow(10,this.q2.quantile()));
     }
     this.index++;
   }
@@ -104,9 +104,9 @@ class TrialQ extends Component {
     const data = getProcessedData();
 
     // Also, generate TT blocks singleton here for later use.
-    const c25 = data.intensities.c25;
-    const c50 = data.intensities.c50;
-    const c75 = data.intensities.c75;
+    const c25 = Math.pow(10,data.intensities.c25);
+    const c50 = Math.pow(10,data.intensities.c50);
+    const c75 = Math.pow(10,data.intensities.c75);
 
     create_blocks_singleton(c25, c50, c75);
   }
