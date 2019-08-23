@@ -78,7 +78,7 @@ function createPatch(stim) {
  export function createAuditoryStim() {
    var stim = {
      duration: 300, // in ms
-     amp: 30,
+     amp: 15,
      frequency: 1330, // 500 Hz higher than VCH_APP
    };
 
