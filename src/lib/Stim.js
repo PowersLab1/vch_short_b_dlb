@@ -79,7 +79,7 @@ function createPatch(stim) {
    var stim = {
      duration: 300, // in ms
      amp: 15,
-     frequency: 1330, // 500 Hz higher than VCH_APP
+     frequency: 700, // 500 Hz higher than VCH_APP
    };
 
    return stim;
