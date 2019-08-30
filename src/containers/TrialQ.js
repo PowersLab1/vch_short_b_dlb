@@ -24,7 +24,7 @@ class TrialQ extends Component {
       tGuess2 = 0.25 - 0.3,
       tGuessSd = 0.1,
       pThreshold = 0.75,
-      beta = 3.5,
+      beta = 3,
       delta = 0.01,
       gamma = 0.01,
       grain = 0.001,

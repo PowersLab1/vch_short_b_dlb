@@ -403,7 +403,7 @@ class Trial extends Component {
 
 Trial.defaultProps = {
   contrasts: config.debug ? _.shuffle([0, 0, 1, 1]) :
-    _.shuffle([0, 0, 0, 0, 0, 1, 1, 1, 1, 1]),
+  _.concat([1], _.shuffle([0, 0, 0, 0, 0, 1, 1, 1, 1])),
   shouldRecordRatings: false,
   trialCompleteRenderer: _.noop,
   responseHandler: _.noop,

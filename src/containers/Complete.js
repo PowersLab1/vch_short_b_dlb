@@ -38,14 +38,13 @@ class Complete extends Component {
         <div className="text-container">
           <p className="Complete-text">
             Congratulations!
-            <br /><br /> The first part of the experiment is over.
-            <br /><br /> Now there will be <b> 4 </b> blocks of trials like the second part of the practice.
-            <br /><br /> You will again use the <b> "Q"/YES </b> and <b> "E"/NO </b> keys to say whether or not you see the stripes.
-            <br /><br /> But you will also hold them down to say how confident you are in your choice,
-            <br /><br /> just as you did in the second part of the practice.
-            <br /><br />  <b> The striped-texture in the remainder of the experiment</b>
-            <br /><br />  <b> may be very difficult to see so you will have to look very hard.</b>
-            <br /><br />  Sometimes it might be difficult to answer, but if you do not know, please guess.
+            <br /><br /> First part of the experiment is over.
+            <br /><br /> Now we will continue with the next trials. Now, there will be ratings similar to the second practice.
+            <br /><br /> You will see a rating screen following each beep, press
+            <br /><br /> and then hold the <b> "Q"/YES </b> button or <b> "E"/NO </b> button.
+            <br /><br /> The longer you hold it down, the more certain you are of your choice.
+            <br /><br /> If you hold <b> "Q"/YES </b>  button down for a long time, you are very certain that you  <b> DO </b> see the stripes.
+            <br /><br /> If you hold <b> "E"/NO </b>  button down for a long time, you are very certain that you <b> DO NOT </b> see the stripes.
             <br /><br /> Please respond as <b> QUICKLY </b> and as <b> ACCURATELY </b> as you <b> POSSIBLY CAN </b>
             <br /><br /><br /> PRESS "Q"/YES WHEN READY TO CONTINUE.
           </p>

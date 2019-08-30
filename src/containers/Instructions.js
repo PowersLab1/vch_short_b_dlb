@@ -39,15 +39,13 @@ class Instructions extends Component {
             <div className="text-container">
               <p className="Instructions-text">
                 This is a vision test.
-                <br /><br /> A visual white noise (similar to static on a TV screen) will be shown throughout the experiment.
-                <br /><br /> A striped texture might appear inside the white noise when a tone is played.
-                <br /><br /> Press <b> "Q"/YES </b> if you <b> DO </b>see the stripes.
-                <br /><br /> Press <b> "E"/NO </b> if you <b> DO NOT </b> see the stripes.
-                <br /><br /> You should give a response every time you hear the tone.
+                <br /><br /> A visual white noise will be shown throughout the experiment.
+                <br /><br /> A striped-texture might appear inside the white noise when a tone is played.
+                <br /><br />Only respond when you hear the beep.
+                <br /><br /> Press  <font size="+2">  <b> "Q"/YES </b> </font> if you <b> DO </b>see the stripes.
+                <br /><br /> Press <font size="+2"> <b> "E"/NO </b> </font> if you <b> DO NOT </b> see the stripes.
                 <br /><br /> Please respond as <b> QUICKLY </b> and as <b> ACCURATELY </b> as you <b> POSSIBLY CAN </b>
-                <br /><br /> The next two parts will be practice sessions to make sure you understand the instructions.
-                <br /><br /><br /> PRESS "Q"/YES TO BEGIN THE PRACTICE SESSIONS.
-
+                <br /><br /><br /> PRESS "Q"/YES TO BEGIN A SHORT PRACTICE SESSION
               </p>
             </div>
             </header>
