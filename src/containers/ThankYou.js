@@ -10,15 +10,13 @@ import {
   getEncryptedMetadata,
   setDataSent,
   getDataSent,
+  getSurveyUrl,
 } from '../store';
 import {isLocalhost} from "../lib/utils";
 import {aws_saveTaskData, aws_fetchLink} from "../lib/aws_lambda";
 
 const config = require('../config');
 var _ = require('lodash');
-
-// Char limit for data store, as determined by redcap fields
-const CHAR_LIMIT = 65535;
 
 class ThankYou extends Component {
   constructor(props) {
@@ -49,9 +47,14 @@ class ThankYou extends Component {
 
     // Load up link if not localhost
     if (!isLocalhost) {
-      aws_fetchLink(encryptedMetadata).then(
-        (link) => this.setState({link: link})
-      );
+      if (_.isUndefined(getSurveyUrl())) {
+        aws_fetchLink(encryptedMetadata).then(
+          (link) => this.setState({link: link})
+        );
+      } else {
+        this.setState({link: getSurveyUrl()});
+      }
+
     } else {
       this.setState({link: "link"});
     }
@@ -85,11 +88,6 @@ class ThankYou extends Component {
       return;
     }
 
-    // If store is too big, then abort
-    if (storeExport.length > CHAR_LIMIT) {
-      throw "Store is too big";
-    }
-
     // Send request and mark data as sent
     aws_saveTaskData(encryptedMetadata, storeExport).then(
       () => {
@@ -114,7 +112,7 @@ class ThankYou extends Component {
     if (this.state.invalid) {
       return <Redirect to="/Error" />
     } else if (this.state.continue) {
-      window.location.assign(this.state.link); // this is clearly wrong
+      window.location.assign(this.state.link);
     } else if (!this.state.sentData || _.isUndefined(this.state.link)) {
       return (
         <div className="ThankYou">

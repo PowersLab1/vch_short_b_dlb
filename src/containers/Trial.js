@@ -394,8 +394,8 @@ class Trial extends Component {
 
     console.log('index: ' + this.state.index);
     console.log('numAttempts: ' + this.numAttempts);
-    console.log('store: ' + JSON.stringify(getStore()));
-    console.log('localStorage: ' + JSON.stringify(localStorage));
+    //console.log('store: ' + JSON.stringify(getStore()));
+    //console.log('localStorage: ' + JSON.stringify(localStorage));
     console.log('================================\n');
   }
 } // end class

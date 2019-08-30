@@ -1,7 +1,6 @@
 {
-  "taskType": 2,
   "taskVersion": "1.0.0",
-  "taskName": "visual",
+  "taskName": "visual_short_b",
   "debug": false,
   "awsLambda": {
     "saveTaskData": {
