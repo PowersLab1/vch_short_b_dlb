@@ -22,8 +22,8 @@ class TrialQ extends Component {
 
     // Initializing QUEST
     // NOTE: Modify your quest parameters here!
-    let tGuess1 = Math.log10(0.25 + 0.15),
-      tGuess2 = Math.log10(0.25 - 0.15),
+    let tGuess1 = Math.log10(0.23),
+      tGuess2 = Math.log10(0.23),
       tGuessSd = 0.1,
       pThreshold = 0.75,
       beta = 3,
