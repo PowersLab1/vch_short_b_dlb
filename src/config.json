@@ -1,6 +1,6 @@
 {
   "taskVersion": "1.0.0",
-  "taskName": "dlb_vch_app_short_b",
+  "taskName": "vch_short_b_dlb",
   "debug": false,
   "awsLambda": {
     "saveTaskData": {

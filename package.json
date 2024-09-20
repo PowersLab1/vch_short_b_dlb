@@ -1,6 +1,6 @@
 {
-  "homepage": "http://powerslab1.github.io/DLB_VCH_app_short_b",
-  "name": "dlb_vch_app_short_b",
+  "homepage": "http://powerslab1.github.io/vch_short_b_dlb",
+  "name": "vch_short_b_dlb",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
