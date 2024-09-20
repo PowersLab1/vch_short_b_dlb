@@ -26,7 +26,7 @@ class TrialQ extends Component {
       tGuess2 = Math.log10(0.23),
       tGuessSd = 0.1,
       pThreshold = 0.75,
-      beta = 3,
+      beta = 12.25,
       delta = 0.01,
       gamma = 0.01,
       grain = 0.001,
